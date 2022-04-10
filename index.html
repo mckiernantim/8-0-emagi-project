@@ -20,14 +20,14 @@
           Encode a phrase using emojis! Each letter in the phrase should be
           converted to its emoji-form. Other punctuation should remain the same.
         </p>
-        <form>
+        <form id="encode-form">
           <label for="encode-phrase">Text to encode</label>
           <input id="encode-phrase" name="encode" type="text" />
           <button type="submit">Encode!</button>
         </form>
         <aside class="result">
           <h3>Result</h3>
-          <p>No result yet...</p>
+          <p id="encode-result">No result yet...</p>
         </aside>
       </article>
       <article id="search">
@@ -37,14 +37,14 @@
           "heart" would return both the heart emoji (i.e. 💜) and the heartbreak
           emoji (i.e. 💔).
         </p>
-        <form>
+        <form id="search-form">
           <label for="search-phrase">Text to search</label>
           <input id="search-phrase" name="search" type="text" />
           <button type="submit">Search!</button>
         </form>
         <aside class="result">
           <h3>Result</h3>
-          <p>No result yet...</p>
+          <p id="search-result">No result yet...</p>
         </aside>
       </article>
       <article id="random">
@@ -53,35 +53,35 @@
           Retrieve a random emoji from the given category. You must select a
           category!
         </p>
-        <form>
+        <form id="category-form">
           <label for="category">Category</label>
           <select id="category" name="category">
-            <option>-- Choose a Category --</option>
+            <option value='none' >-- Choose a Category --</option>
           </select>
           <button type="submit">Randomize!</button>
         </form>
         <aside class="result">
           <h3>Result</h3>
-          <p>No result yet...</p>
+          <p id="category-result">No result yet...</p>
         </aside>
       </article>
       <article id="replace">
         <h2>Replace Text</h2>
         <p>Replace relevant words with emojis in a block of text.</p>
-        <form>
+        <form id="replace-form">
           <label for="replace-text">Text to replace</label>
           <textarea id="replace-text" name="replace" rows="5"></textarea>
           <button type="submit">Replace!</button>
         </form>
         <aside class="result">
           <h3>Result</h3>
-          <p>No result yet...</p>
+          <p id="replace-result">No result yet...</p>
         </aside>
       </article>
     </main>
     <footer>
       <p>
-        Created by YOUR-NAME.
+        Created by 8.4
         <a href="https://joinpursuit.org">Join Pursuit.</a>
       </p>
     </footer>
